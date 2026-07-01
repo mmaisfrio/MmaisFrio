@@ -5,7 +5,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // =====================================
-    // GERADOR DE PARTÕCULAS DE AR FRIO
+    // GERADOR DE PART√çCULAS DE AR FRIO
     // =====================================
 
     const particlesContainer = document.getElementById("particles");
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             } else {
 
-                counter.innerText = target + "+";
+                counter.innerText = target.toLocaleString('pt-BR') + "+";
 
             }
 
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // =====================================
-    // ANIMA«√O AO ROLAR
+    // ANIMA√á√ÉO AO ROLAR
     // =====================================
 
     const revealElements = document.querySelectorAll(
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // =====================================
-    // HEADER DIN¬MICO
+    // HEADER DIN√ÇMICO
     // =====================================
 
     const header = document.querySelector(".header");
@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // =====================================
-// ESTILOS DIN¬MICOS DAS PARTÕCULAS
+// ESTILOS DIN√ÇMICOS DAS PART√çCULAS
 // =====================================
 
 const particleStyle = document.createElement("style");
