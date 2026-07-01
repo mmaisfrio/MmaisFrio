@@ -552,32 +552,4 @@ footer h3{
     .offer-box h2{
         font-size:2rem;
     }
-   .offer-price{
-    margin:25px 0;
-}
-
-.offer-price span{
-    display:block;
-    font-size:1rem;
-    opacity:.9;
-    color:#fff;
-}
-
-.offer-price strong{
-    display:block;
-    font-size:3.5rem;
-    font-weight:800;
-    color:#FFD700;
-    line-height:1.1;
-    text-shadow:
-        0 0 10px rgba(255,215,0,.4),
-        0 0 20px rgba(255,215,0,.3);
-}
-
-.offer-price small{
-    display:block;
-    margin-top:8px;
-    color:#fff;
-    font-size:1rem;
-}
 }
