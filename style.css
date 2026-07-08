@@ -19,6 +19,196 @@
     --text:#3b4a5a;
     --shadow:0 15px 40px rgba(13,110,253,.12);
 }
+/*==================================
+MAGNATA DIGITAL
+===================================*/
+
+#magnata{
+
+padding:140px 8%;
+
+background:
+linear-gradient(rgba(0,0,0,.90),
+rgba(0,0,0,.96)),
+url("img/fundo-magnata.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.magnata-container{
+
+max-width:1400px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:420px 1fr;
+
+align-items:center;
+
+gap:80px;
+
+}
+
+.magnata-logo{
+
+text-align:center;
+
+}
+
+.magnata-logo img{
+
+width:100%;
+
+max-width:360px;
+
+animation:logoMagnata 5s ease-in-out infinite;
+
+filter:
+
+drop-shadow(0 0 20px rgba(255,215,0,.35))
+
+drop-shadow(0 0 50px rgba(255,215,0,.15));
+
+}
+
+@keyframes logoMagnata{
+
+0%{transform:translateY(0);}
+
+50%{transform:translateY(-10px);}
+
+100%{transform:translateY(0);}
+
+}
+
+.magnata-texto span{
+
+color:#FFD700;
+
+font-weight:700;
+
+letter-spacing:5px;
+
+}
+
+.magnata-texto h2{
+
+font-size:60px;
+
+margin:15px 0;
+
+color:#fff;
+
+}
+
+.magnata-texto p{
+
+font-size:20px;
+
+line-height:38px;
+
+color:#d6d6d6;
+
+margin-bottom:40px;
+
+}
+
+.magnata-botoes{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn-magnata{
+
+padding:18px 38px;
+
+border-radius:60px;
+
+background:linear-gradient(90deg,#FFD700,#b8860b);
+
+color:#111;
+
+font-weight:700;
+
+text-decoration:none;
+
+transition:.4s;
+
+box-shadow:0 0 30px rgba(255,215,0,.35);
+
+}
+
+.btn-magnata:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 0 50px rgba(255,215,0,.6);
+
+}
+
+.btn-magnata-outline{
+
+padding:18px 38px;
+
+border-radius:60px;
+
+border:2px solid #FFD700;
+
+color:#FFD700;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.4s;
+
+}
+
+.btn-magnata-outline:hover{
+
+background:#FFD700;
+
+color:#000;
+
+}
+
+@media(max-width:991px){
+
+.magnata-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.magnata-botoes{
+
+justify-content:center;
+
+}
+
+.magnata-texto h2{
+
+font-size:42px;
+
+}
+
+}
 
 body{
     font-family:'Poppins',sans-serif;
