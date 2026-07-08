@@ -554,187 +554,354 @@ footer h3{
     }
 }
 
-/* MAGNATA DIGITAL VENDA */
+/* =====================================================
+   MAGNATA DIGITAL - BLOCO DE DIVULGAÇÃO DA AGÊNCIA
+   SEPARADO DA IDENTIDADE DO CLIENTE
+===================================================== */
 
-.magnata-vendas{
 
-    background:
-    linear-gradient(135deg,#050505,#1a1a1a);
+.magnata-vendas {
 
-    padding:90px 20px;
-    color:white;
-    text-align:center;
+    width: 100%;
+    background: #050505;
+
+    padding: 100px 20px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    border-top: 5px solid #d4af37;
+
+    position: relative;
+
+    overflow: hidden;
 
 }
 
 
-.magnata-box{
+/* Efeito de brilho no fundo */
+
+.magnata-vendas::before {
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:
+    radial-gradient(circle,
+    rgba(212,175,55,0.25),
+    transparent 70%);
+
+    top:-200px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+/* CONTAINER */
+
+.magnata-box {
+
+    position:relative;
 
     max-width:1200px;
+
     margin:auto;
 
 }
 
 
-.magnata-tag{
+/* TAG SUPERIOR */
+
+.magnata-tag {
 
     display:inline-block;
-    background:#d4af37;
+
+    background:
+    linear-gradient(90deg,#d4af37,#f7d774);
+
     color:#000;
-    padding:12px 25px;
-    border-radius:30px;
-    font-weight:900;
+
+    padding:12px 30px;
+
+    border-radius:50px;
+
     font-size:14px;
 
+    font-weight:900;
+
+    letter-spacing:1px;
+
 }
 
 
-.magnata-vendas h2{
 
-    margin-top:35px;
-    font-size:42px;
+/* TITULO */
+
+.magnata-vendas h2 {
+
+    margin-top:40px;
+
+    font-size:48px;
+
+    line-height:1.2;
+
     font-weight:900;
 
 }
 
 
-.magnata-texto{
+.magnata-vendas h2 span {
+
+    color:#d4af37;
+
+}
+
+
+
+/* TEXTO */
+
+.magnata-texto {
 
     max-width:850px;
-    margin:25px auto;
-    color:#ddd;
+
+    margin:30px auto;
+
+    color:#cccccc;
+
     font-size:20px;
-    line-height:1.7;
+
+    line-height:1.8;
 
 }
 
 
 
-.magnata-beneficios{
+/* CARDS DOS SERVIÇOS */
+
+.magnata-beneficios {
 
     display:flex;
+
     justify-content:center;
-    gap:25px;
+
+    gap:30px;
+
     flex-wrap:wrap;
-    margin-top:50px;
+
+    margin-top:60px;
 
 }
 
 
 
-.magnata-beneficios div{
+.magnata-beneficios div {
 
-    width:300px;
-    padding:35px 25px;
+    background:#111;
 
-    background:#101010;
+    width:320px;
 
-    border:1px solid #d4af37;
+    padding:40px 30px;
 
     border-radius:20px;
 
-    transition:.3s;
+    border:1px solid #222;
 
-}
-
-
-.magnata-beneficios div:hover{
-
-    transform:translateY(-12px);
+    transition:.4s;
 
 }
 
 
 
-.magnata-beneficios h3{
+.magnata-beneficios div:hover {
+
+    border-color:#d4af37;
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.5);
+
+}
+
+
+
+.magnata-beneficios h3 {
 
     color:#d4af37;
-    font-size:24px;
+
+    font-size:25px;
 
 }
 
 
 
-.magnata-beneficios p{
+.magnata-beneficios p {
 
-    color:#bbb;
+    color:#aaa;
+
     line-height:1.6;
 
 }
 
 
 
-.chamada{
+/* CHAMADA */
 
-    margin-top:60px;
-    font-size:30px;
+.chamada {
+
+    margin-top:70px;
+
+    font-size:32px;
+
+    font-weight:800;
 
 }
 
 
 
-.botao-magnata{
+/* BOTÃO */
 
-    display:inline-block;
+.botao-magnata {
 
-    margin-top:30px;
+    display:inline-flex;
 
-    padding:22px 45px;
+    align-items:center;
+
+    justify-content:center;
+
+
+    margin-top:35px;
+
+    padding:22px 55px;
+
 
     background:#25D366;
 
     color:white;
 
-    text-decoration:none;
-
-    border-radius:50px;
 
     font-size:20px;
 
     font-weight:900;
 
-    box-shadow:0 0 25px rgba(37,211,102,.5);
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+
+    transition:.3s;
+
+
+    box-shadow:
+    0 10px 30px rgba(37,211,102,.3);
 
 }
 
 
 
-.botao-magnata:hover{
+.botao-magnata:hover {
 
-    transform:scale(1.05);
-
-}
-
-
-
-.assinatura{
-
-    margin-top:70px;
-
-    padding-top:35px;
-
-    border-top:1px solid #333;
+    transform:scale(1.08);
 
 }
 
 
 
-.assinatura h1{
+/* LOGO / ASSINATURA */
+
+.assinatura {
+
+    margin-top:90px;
+
+    padding-top:40px;
+
+    border-top:
+
+    1px solid rgba(255,255,255,.15);
+
+}
+
+
+
+.assinatura h1 {
+
+    font-size:55px;
+
+    letter-spacing:10px;
 
     color:#d4af37;
 
-    font-size:45px;
-
-    letter-spacing:8px;
+    font-weight:900;
 
 }
 
 
 
-.assinatura p{
+.assinatura p {
 
-    color:#aaa;
+    color:#999;
 
     font-size:18px;
+
+}
+
+
+
+/* RESPONSIVO CELULAR */
+
+@media(max-width:768px){
+
+
+.magnata-vendas {
+
+    padding:70px 20px;
+
+}
+
+
+.magnata-vendas h2 {
+
+    font-size:32px;
+
+}
+
+
+.magnata-texto {
+
+    font-size:17px;
+
+}
+
+
+.magnata-beneficios div {
+
+    width:100%;
+
+}
+
+
+.chamada {
+
+    font-size:24px;
+
+}
+
+
+.assinatura h1 {
+
+    font-size:35px;
+
+    letter-spacing:5px;
+
+}
+
 
 }
