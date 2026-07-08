@@ -552,4 +552,95 @@ footer h3{
     .offer-box h2{
         font-size:2rem;
     }
+
+/* MAGNATA DIGITAL */
+
+.magnata-section{
+    background: linear-gradient(135deg,#050505,#151515);
+    padding:80px 20px;
+    text-align:center;
+    color:white;
 }
+
+
+.magnata-container{
+    max-width:1100px;
+    margin:auto;
+}
+
+
+.magnata-section h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+
+.magnata-section p{
+    color:#ccc;
+    font-size:18px;
+    line-height:1.6;
+}
+
+
+.magnata-servicos{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+
+.magnata-card{
+    background:#111;
+    border:1px solid #c9a227;
+    padding:30px;
+    border-radius:15px;
+    width:280px;
+    transition:.3s;
+}
+
+
+.magnata-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.magnata-card h3{
+    color:#d4af37;
+}
+
+
+.btn-magnata{
+
+    display:inline-block;
+    margin-top:40px;
+    padding:18px 35px;
+    background:#d4af37;
+    color:#000;
+    font-weight:bold;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:18px;
+
+}
+
+
+.magnata-logo{
+    margin-top:60px;
+    border-top:1px solid #333;
+    padding-top:30px;
+}
+
+
+.magnata-logo h3{
+    font-size:35px;
+    letter-spacing:5px;
+    color:#d4af37;
+}
+
+
+.magnata-logo span{
+    color:white;
+}
+   }
